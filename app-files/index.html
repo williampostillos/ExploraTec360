@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <img src="img/tecsup-logo.png" alt="Tecsup Logo" id="sidebarLogo">
+  <ul class="scenes">
+    
+    <a href="javascript:void(0)" class="scene" data-id="0-entrada">
+      <li class="text">
+        <img src="img/icon-entrada.png" alt="Entrada Icon" class="scene-icon"> Entrada
+      </li>
+    </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-patio-central">
+        <li class="text">
+          <img src="img/icon-patio.png" alt="Patio Icon" class="scene-icon"> Patio Central
+        </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-entrada-biblioteca">
+        <li class="text">Entrada biblioteca</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-biblioteca">
+        <li class="text">
+          <img src="img/icon-biblioteca.png" alt="Biblioteca Icon" class="scene-icon"> Biblioteca
+        </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-pabellon-4---piso-1">
+        <li class="text">Pabellon 4 - piso 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-pabellon-4---piso-2--a">
+        <li class="text">Pabellon 4 - piso 2 -A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-pabellon-4---piso-2-m">
+        <li class="text">Pabellon 4 - piso 2-M</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-pabellon-4---piso-2-e">
+        <li class="text">Pabellon 4 - piso 2-E</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-pabellon-4---piso-2-s">
+        <li class="text">Pabellon 4 - piso 2-S</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-salon-pabellon-4">
+        <li class="text">Salon Pabellon 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-maquinitas">
+        <li class="text">Maquinitas</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-pabellon-4">
+        <li class="text">
+          <img src="img/icon-pabellon4.png" alt="Pabellon 4 Icon" class="scene-icon"> Pabellon 4
+        </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-area-de-salones-4b">
+        <li class="text">Area de salones 4B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-camino">
+        <li class="text">Camino</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-pabellon-7">
+        <li class="text">
+          <img src="img/icon-pabellon7.png" alt="Pabellon 7 Icon" class="scene-icon"> Pabellon 7
+        </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-pabellon-11">
+        <li class="text">
+          <img src="img/icon-pabellon11.png" alt="Pabellon 11 Icon" class="scene-icon"> Pabellon 11
+        </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-polideportivo">
+        <li class="text">
+          <img src="img/icon-polideportivo.png" alt="Polideportivo Icon" class="scene-icon"> Polideportivo
+        </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-area-de-mecanica">
+        <li class="text">Area de mecanica</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-mecanica">
+        <li class="text">Mecanica</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-zona-verde">
+        <li class="text">Zona verde</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-cerca-del-ajedrez">
+        <li class="text">Cerca del ajedrez</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-segundo-piso-e">
+        <li class="text">Segundo piso E</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-segundo-piso-s">
+        <li class="text">Segundo piso S</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-pabellon-14">
+        <li class="text">
+          <img src="img/icon-pabellon14.png" alt="Pabellon 14 Icon" class="scene-icon"> Pabellon 14
+        </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-salones-de-mecanica">
+        <li class="text">Salones de mecanica</li>
+      </a>
+
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+
+<!-- Ícono de información que abrirá el modal -->
+
+<!-- Estructura del modal -->
+<div id="infoModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+
+    <img id="modalImage" src="" alt="Info Image" class="modal-image">
+    <p id="modalText" class="modal-text"></p>
+  </div>
+</div>
+
+
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
